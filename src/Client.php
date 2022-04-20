@@ -43,6 +43,15 @@ class Client
         return $this->processAPI('/account', null, null, $filters);
     }
 
+    /*
+     * Account
+     */
+    public function getOrders($filters = [])
+    {
+        return $this->processAPI('/orders', null, null, $filters);
+    }
+
+    
     public function processAPI($endpoint, $params = [], $method = self::METHOD_GET, $filters = [])
     {
         $endpoint = $this->getEndpoint($endpoint, $filters);
