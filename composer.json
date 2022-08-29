@@ -4,5 +4,6 @@
     "autoload": {
         "psr-4": {
             "DailyPack\\Api\\": "src/"
-        }    
+        }
+    }
 }
