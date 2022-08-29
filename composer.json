@@ -1,4 +1,8 @@
 {
     "name": "dailypack/php-wrapper",
-    "description": "PHP wrapper for DailyPack API"
+    "description": "PHP wrapper for DailyPack API",
+    "autoload": {
+        "psr-4": {
+            "DailyPack\\Api\\": "src/"
+        }    
 }
