@@ -140,6 +140,15 @@ class Client
         return $endpoint;
     }
 
+
+    /**
+    *
+    */
+    public function setDebug()
+    {
+        $this->debug = true;
+    }    
+    
     protected function debug($message)
     {
         if ($this->debug) {
